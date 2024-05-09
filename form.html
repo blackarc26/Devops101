@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function validateForm() {
+ let x=document.forms["myForm"]["fname"].value;
+ if (x=="") {
+   alert("Name must be filled out ");
+   return false;
+ }
+}
+</script>
+</head>
+<body>
+
+<h2><center><u>Any problem</u></center></h2>
+
+<form name="myForm" onsubmit="return validateForm()" method="post">
+ Feedback:<br>
+<textarea rows="5" cols="60" name="fname">
+</textarea>
+ <input type="submit" value="Submit">
+</form>
+</body>
+</html>
